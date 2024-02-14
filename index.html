@@ -12,17 +12,97 @@
     
     <main class="">
         <!--HomePage Design-->
-        <section class="home flex flex-col justify-center items-center min-h-screen gap-8">
+        <section class="home flex flex-col justify-center items-center min-h-screen gap-8 hidden">
             <h1 class="text-[150px] text-white anton-regular ">Alphabet Clash</h1>
             <p class="anton-regular font-medium text-white text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
             <button class="btn-primary text-black bg-[#FFFFFF] text-2xl font-semibold p-4 rounded-md">Play Now</button>
         </section>
-    
-        <section class="playground">
-    
-        </section>
-        <section class="score">
+
+
+        <!--Playground Design-->
+        <section class="playground hidden">
+            <!--Screen-->
+            <div class="flex flex-col justify-center items-center h-full gap-20 pt-12">
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                <div class=" flex justify-center ">
+                    <p class="text-white bg-[#2F2941] px-8 rounded-b-md">Don't watch keyboard  while playing...</p>
+                </div>
+                <div class="flex justify-center items-center h-full">
+                    <p class="text-[#010313] font-semibold text-9xl ">Y</p>
+                </div>
+            </div>
+            </div>
             
+            <!--Keyboard-->
+            <div class="mt-8">
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                  </div>
+            </div>
+
+            <!--Lifeline Score-->
+            <div class="flex justify-between mx-40">
+                <div>
+                    <button class="btn bg-[#894189] rounded-full text-white font-medium text-xl px-4">
+                        Life
+                        <img src="images/lifeline.svg" alt="">
+                        <span>1</span>
+                      </button>
+                </div>
+                <div>
+                    <button class="btn bg-[#360490] rounded-full text-white font-medium text-xl px-4">
+                        Score
+                        <img src="images/monetization.svg" alt="">
+                        <span>1</span>
+                      </button>
+                </div>
+            </div>
+        </section>
+
+        <!--Score-->
+        <section class="score flex flex-col justify-center items-center min-h-screen gap-4">
+            <div class="bg-[#FFFFFF33] p-8 rounded-2xl space-y-4">
+                <div>
+                    <span class="font-extrabold text-6xl text-white">Score :</span> 
+                    <span class="font-medium text-6xl text-white">14</span>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button class="btn-primary text-black bg-[#FFFFFF] text-2xl font-semibold p-4 rounded-md">Play Again</button>
+                </div>
+                <div>
+                    <p class="font-medium text-xl text-white">Practice will make you Pro</p>
+                </div>
+            </div>  
         </section>
     </main>
     
