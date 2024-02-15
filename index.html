@@ -12,15 +12,15 @@
     
     <main class="">
         <!--HomePage Design-->
-        <section class="home flex flex-col justify-center items-center min-h-screen gap-8 hidden">
-            <h1 class="text-[150px] text-white anton-regular ">Alphabet Clash</h1>
+        <section id="home" class=" flex flex-col justify-center items-center min-h-screen gap-8">
+            <h1 class="text-[100px] text-white anton-regular ">Alphabet Clash PRO</h1>
             <p class="anton-regular font-medium text-white text-2xl">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn-primary text-black bg-[#FFFFFF] text-2xl font-semibold p-4 rounded-md">Play Now</button>
+            <button onclick="playgame()" class="btn-primary text-black bg-[#FFFFFF] text-2xl font-semibold p-4 rounded-md">Play Now</button>
         </section>
 
 
         <!--Playground Design-->
-        <section class="playground hidden">
+        <section id="playground" class=" hidden">
             <!--Screen-->
             <div class="flex flex-col justify-center items-center h-full gap-20 pt-12">
                 <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
@@ -90,7 +90,8 @@
         </section>
 
         <!--Score-->
-        <section class="score flex flex-col justify-center items-center min-h-screen gap-4">
+        <!--Final Score-->
+        <section class="score flex flex-col justify-center items-center min-h-screen gap-4 hidden">
             <div class="bg-[#FFFFFF33] p-8 rounded-2xl space-y-4">
                 <div>
                     <span class="font-extrabold text-6xl text-white">Score :</span> 
@@ -105,6 +106,7 @@
             </div>  
         </section>
     </main>
+    <script src="scripts/alpha-clash.js"></script>
     
 </body>
 </html>
