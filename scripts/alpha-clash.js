@@ -11,6 +11,27 @@ function playgame(){
      continueGame();
 }
 
+document.addEventListener('keyup' , function keyboardButton(event){
+    const playerPressed = event.key;
+    console.log(playerPressed);
+
+    const currentAlphabet = document.getElementById('current-alphabet');
+    const currentAlphabetValue = currentAlphabet.innerText;
+    const expectedAlphabet = currentAlphabetValue.toLowerCase();
+
+    if(playerPressed === expectedAlphabet)
+    {
+        const removeBackground = document.getElementById(expectedAlphabet)
+        removeBackground.classList.remove('bg-orange-400');
+        continueGame();
+        console.log('Matched');
+    }
+    else{
+        console.log('You Missed a chance');
+    }
+    
+})
+
 function continueGame(){
     const randomNumber = Math.random()*25;
     const index = Math.round(randomNumber)
