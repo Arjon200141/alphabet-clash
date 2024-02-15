@@ -22,5 +22,11 @@ function continueGame(){
 
     const alphabet = alphabets[index];
     console.log(alphabet)
-    return alphabet;
+    
+
+    const currentAlphabet = document.getElementById('current-alphabet');
+    currentAlphabet.innerText = alphabet;
+
+    const setBackground = document.getElementById(alphabet)
+    setBackground.classList.add('bg-orange-400');
 }
